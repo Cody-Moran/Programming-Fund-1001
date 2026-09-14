@@ -1,2 +1,2 @@
 # Programming-Fund-1001
-this is a description
+Learning Repository for SDEV1001
