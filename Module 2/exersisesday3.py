@@ -17,17 +17,16 @@ print(f"The area of the rectangle is: {area:.3f} cm")
 # printing a silly sentence
 # %%
 name = input("What is your name?: ")
-adj = "hard"
-verb = "jumped"
+adj = "far"
+verb = "fell"
 print(f"{name} {verb} really {adj}.")
-# %%
 # price and quantity of item GST
 # %%
-item_price = float(input("What is the price of the item?: "))
-quantity = float(input("Quantity: "))
+item_price = float(input("What is the price of the item? ($)`: "))
+quantity = int(input("Quantity: "))
 gst = ((quantity*item_price)*0.05)
 total = (item_price*quantity+gst)
-print(f"Purchasing {quantity:.0f} of this item worth ${item_price} including the GST amount of $0.05 is ${total}")
+print(f"Purchasing {quantity:.0f} of this item worth ${item_price} including the GST amount of $0.05 is ${total:.2f}")
 
 # kilometers to miles converison
 # %%
@@ -39,8 +38,8 @@ print(f"{km} converted into miles is: {miles:.2f}")
 # %%
 dist = float(input ("Enter the distance you want to travel (km): "))
 vehicle_consum = float(input ("Enter the fuel consumption of your vehicle (liters per 100km): "))
-price_per_litre = 1.58
-fuel_consum = (vehicle_consum*price_per_litre)
-trip_consum = (dist)*(fuel_consum)/100
-print(f"You are traveling {dist} kilometers, the amount of fuel needed for that distance is {vehicle_consum:.1f} liters. With the price of fuel being ${price_per_litre} per litre, this trip will cost ${trip_consum:.2f}")
+price_per_litre = 1.60
+fuel_consum = (dist/vehicle_consum)
+total_cost = (price_per_litre)*(vehicle_consum*(dist/100))
+print(f"You are traveling {dist} kilometers, the amount of fuel needed for that distance is {fuel_consum:.1f} liters. With the price of fuel being ${price_per_litre} per litre, this trip will cost ${total_cost:.2f}")
 # %%
