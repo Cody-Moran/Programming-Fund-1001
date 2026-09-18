@@ -17,7 +17,7 @@ print(f"The area of the rectangle is: {area:.3f} cm")
 # printing a silly sentence
 # %%
 name = input("What is your name?: ")
-adj = "far"
+adj = "hard"
 verb = "fell"
 print(f"{name} {verb} really {adj}.")
 # price and quantity of item GST
